@@ -1,6 +1,7 @@
 import { expect } from '@playwright/test';
 import { createBdd } from 'playwright-bdd';
 import { LoginPage } from '../pages/LoginPage';
+// import testData from '../TestData/data.json';
 import testData from '../TestData/data.json';
 
 const { Given, When, Then } = createBdd();
