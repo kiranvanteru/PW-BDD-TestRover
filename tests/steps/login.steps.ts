@@ -7,8 +7,10 @@ import testData from '../TestData/data.json';
 const { Given, When, Then } = createBdd();
 
 Given('user is on login page', async ({ page }) => {
+    console.log("test using gihubActions")
   await new LoginPage(page).BrowseURL(testData.URL);
   await page.waitForTimeout(2000);
+
     
   }
 );
