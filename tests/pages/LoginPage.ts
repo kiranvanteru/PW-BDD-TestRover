@@ -28,4 +28,7 @@ export class LoginPage {
   async ClickLogin() {
     await this.loginButton.click();
   }
+  async Screenshot(Step:String){
+    await this.page.screenshot({ path: "./Screens/Screenshot"+Step+".png" });
+  }
 }
